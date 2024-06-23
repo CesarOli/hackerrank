@@ -1,3 +1,3 @@
-Exercçicios do site Hackerrank na linguagem de programação JAVA.
+Exercícios do site Hackerrank na linguagem de programação JAVA.
 
 
