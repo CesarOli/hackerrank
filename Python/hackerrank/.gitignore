@@ -1,3 +1,14 @@
 # Arquivos e diretórios do ambiente virtual Python
 /hackerrank/
+bin/
+include/
+lib/
+lib64/
+pyvenv.cfg
 
+# Arquivo de cache do editor
+.vscode/
+
+# Arquivos de compilação Python
+*.pyc
+__pycache__/
