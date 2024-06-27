@@ -41,3 +41,22 @@ def statement():
     As proporções de ocorrência são positivas: 3/6 = 0.500000, negativas: 2/6 = 0.333333 e zeros: 1/6 = 0.166667.
 ''')
 
+def plusMinus(arr):
+
+    n, i, quantidade_positivos, quantidade_negativos, quantidades_zeros = 0
+    arr = list(arr)
+    proporcaoPositivos, proporcaoNegativos, proporcaoZero = 0.0
+
+    return resultado
+
+
+if __name__ == '__main__':
+
+    statement()
+
+    n = int(input('Informe o tamanho do array: ').strip())
+
+    arr = list(map(int, input("Insira o array: ").rstrip().split()))
+
+resultado =  plusMinus(arr)
+print('O resultado final é: ', resultado)
