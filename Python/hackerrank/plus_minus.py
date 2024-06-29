@@ -43,17 +43,33 @@ def statement():
 
 def plusMinus(arr):
 
-    positivos, negativos, zeros = 0 
+    positivos = 0
+    negativos = 0
+    zeros = 0 
     n = len(arr)
     
+    for numero in arr:
+        if numero > 0:
+            positivos += 1
+        elif numero < 0:
+            negativos += 1
+        else:
+            zeros += 1
+
+    fracao_positivos = positivos / n
+    fracao_negativos = negativos / n
+    fracao_zeros = zeros / n
+
+    print(f'{fracao_positivos:.6f}')
+    print(f'{fracao_negativos:.6f}')
+    print(f'{fracao_zeros:.6f}')
+
 
 if __name__ == '__main__':
-
+    
     statement()
 
     n = int(input('Informe o tamanho do array: ').strip())
 
     arr = list(map(int, input("Insira o array: ").rstrip().split()))
-
-resultado =  plusMinus(arr)
-print('O resultado final é: ', resultado)
+    plusMinus(arr)
