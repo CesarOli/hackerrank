@@ -43,12 +43,9 @@ def statement():
 
 def plusMinus(arr):
 
-    n, i, quantidade_positivos, quantidade_negativos, quantidades_zeros = 0
-    arr = list(arr)
-    proporcaoPositivos, proporcaoNegativos, proporcaoZero = 0.0
-
-    return resultado
-
+    positivos, negativos, zeros = 0 
+    n = len(arr)
+    
 
 if __name__ == '__main__':
 
