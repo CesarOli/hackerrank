@@ -68,13 +68,26 @@ Dica: Cuidado com estouro de inteiros! Use um inteiro de 64 bits.
 
 
 def miniMaxSum(arr):
-    return
+
+    total_soma = sum(arr)
+    soma_min = total_soma - max(arr)
+    soma_max = total_soma - min(arr)
+
+    for num in arr:
+        soma_atual = total_soma - num
+        
+        if soma_atual < soma_min:
+            soma_min = soma_atual
+        if soma_atual > soma_max:
+            soma_max = soma_atual
+
+    print(soma_min, soma_max)
+
 
 if __name__ == '__main__':
 
     statement()
 
-    """ arr = list(map(int, input().rstrip().split()))
+    arr = list(map(int, input('Insira os cinco (5) valores inteiros separados por espaço: ').rstrip().split()))
 
     miniMaxSum(arr)
- """
