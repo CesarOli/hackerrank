@@ -57,14 +57,26 @@ Explicação 0:
 
 
 def gradingStudents(grades):
-    return 0
+    adjusted_grades = []
 
+    for grade in grades:
+        if grade < 38:
+            adjusted_grades.append(grade)
+        else:
+            next_multiple_of_five = (grade + 4) // 5 * 5
+            
+            if next_multiple_of_five - grade < 3:
+                adjusted_grades.append(next_multiple_of_five)
+            else:
+                adjusted_grades.append(grade)
+
+    return adjusted_grades
 
 if __name__ == '__main__':
 
     statement()
 
-    grades_count = int(input().strip())
+    grades_count = int(input().strip ())
 
     grades = []
 
