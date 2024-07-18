@@ -92,9 +92,9 @@ def kangaroo(x1, v1, x2, v2):
     else: 
         return "NO"
     
-statement()
 
-kangaroo(0, 3, 4, 2)
+#statement()
+print(kangaroo(0, 3, 4, 5))
 
 """ if __name__ == '__main__':
 
