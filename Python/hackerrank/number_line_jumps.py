@@ -1,8 +1,4 @@
 
-def kangaroo(x1, v1, x2, v2):
-    return
-
-
 def statement():
     print("""
     Você está coreografando um show de circo com vários animais. Para um ato, 
@@ -46,13 +42,12 @@ def statement():
     1 <= v2 <= 10000
 
     Exemplo de Entrada 0
-
     0 3 4 2
+          
     Exemplo de Saída 0
-
     SIM
+ 
     Explicação 0
-
     Os dois cangurus pulam através da seguinte sequência de locais:
 
     Na imagem, fica claro que os cangurus se encontram na mesma localização 
@@ -75,8 +70,31 @@ def statement():
     """)
 
 
+
+def kangaroo(x1, v1, x2, v2):
+
+    # verificação para igualdade nas velocidades, mas posições iniciais diferentes
+    if v1 == v2:
+        if x1 == x2:
+            return 'YES'
+        else:
+            return 'NO'
+    
+    # diferença inicial 
+    difference_position = x1 - x2
+
+    # diferença de velocidade
+    difference_velocity = v2 - v1
+
+    # verificação do possível encontro dos cangurus
+    if  difference_position % difference_velocity == 0 and difference_position / difference_velocity > 0:
+        return "YES"
+    else: 
+        return "NO"
+    
 statement()
 
+kangaroo(0, 3, 4, 2)
 
 """ if __name__ == '__main__':
 
