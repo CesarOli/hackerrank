@@ -88,9 +88,9 @@ def kangaroo(x1, v1, x2, v2):
 
     # verificação do possível encontro dos cangurus
     if  difference_position % difference_velocity == 0 and difference_position / difference_velocity > 0:
-        return "YES"
+        return 'YES'
     else: 
-        return "NO"
+        return 'NO'
     
 
 #statement()
