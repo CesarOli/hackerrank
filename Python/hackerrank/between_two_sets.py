@@ -97,7 +97,12 @@ if __name__ == '__main__':
           ''')
           
 def getTotalX(a, b):
-    return
+    def gcd(x,y):
+        pass
+
+    def lcm(x,y):
+        pass
+
 
 if __name__ == '__main__':
 
