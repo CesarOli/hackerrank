@@ -99,7 +99,7 @@ if __name__ == '__main__':
 def getTotalX(a, b):
     
     def gcd(x,y):
-
+        #calculo MDC de x e y.
         while y:
             x, y = y, x % y
         
@@ -107,7 +107,7 @@ def getTotalX(a, b):
     
 
     def lcm(x,y):
-        
+        #calculo MMC de x e y.
         return x * y // gcd(x, y)
 
 if __name__ == '__main__':
