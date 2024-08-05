@@ -109,6 +109,17 @@ def getTotalX(a, b):
     def lcm(x,y):
         #calculo MMC de x e y.
         return x * y // gcd(x, y)
+    
+
+    lcm_array_a = a[0]
+    for i in a[1:]:
+        #calculo MMC de todos os elementos do array a.
+        lcm_array_a = lcm(lcm_array_a, i)
+
+    
+
+
+
 
 if __name__ == '__main__':
 
