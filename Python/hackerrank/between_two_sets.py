@@ -116,11 +116,13 @@ def getTotalX(a, b):
         #calculo MMC de todos os elementos do array a.
         lcm_array_a = lcm(lcm_array_a, i)
 
+
+    gcd_array_b = b[0]
+    for j in b[1:]:
+        #calculo MDC de todos os elementos do array b.
+        gcd_array_b = gcd(gcd_array_b, j)
+
     
-
-
-
-
 if __name__ == '__main__':
 
     statement()
