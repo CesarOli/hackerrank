@@ -107,8 +107,8 @@ def getTotalX(a, b):
     
 
     def lcm(x,y):
-        pass
-
+        
+        return x * y // gcd(x, y)
 
 if __name__ == '__main__':
 
