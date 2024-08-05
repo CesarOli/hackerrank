@@ -97,8 +97,14 @@ if __name__ == '__main__':
           ''')
           
 def getTotalX(a, b):
+    
     def gcd(x,y):
-        pass
+
+        while y:
+            x, y = y, x % y
+        
+        return x 
+    
 
     def lcm(x,y):
         pass
