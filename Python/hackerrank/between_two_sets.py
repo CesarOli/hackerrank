@@ -122,6 +122,16 @@ def getTotalX(a, b):
         #calculo MDC de todos os elementos do array b.
         gcd_array_b = gcd(gcd_array_b, j)
 
+
+    count = 0
+    multiple = lcm_array_a
+    while multiple <= gcd_array_b:
+        #verificação, se o multiplp divide o MDC
+        if gcd_array_b % multiple == 0:
+            count += 1
+        multiple += lcm_array_a
+    
+    return count
     
 if __name__ == '__main__':
 
