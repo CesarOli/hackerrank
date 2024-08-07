@@ -98,7 +98,7 @@ if __name__ == '__main__':
           
 def getTotalX(a, b):
     
-    def gcd(x,y):
+    def gcd(x, y):
         #calculo MDC de x e y.
         while y:
             x, y = y, x % y
@@ -106,7 +106,7 @@ def getTotalX(a, b):
         return x 
     
 
-    def lcm(x,y):
+    def lcm(x, y):
         #calculo MMC de x e y.
         return x * y // gcd(x, y)
     
@@ -148,3 +148,4 @@ if __name__ == '__main__':
     brr = list(map(int, input().rstrip().split()))
 
     total = getTotalX(arr, brr)
+    print(total)
