@@ -10,8 +10,14 @@ def breakingRecords(scores):
     maximo_breaks = 0
     minimo_breaks = 0
 
+    for score in scores[1:]:
+        if score > maximo_score:
+            maximo_score = score
+            maximo_score += 1
+        elif score < minimo_score:
+            minimo_score = score
+            minimo_breaks += 1
 
-    return
 
 if __name__ == '__main__':
 
