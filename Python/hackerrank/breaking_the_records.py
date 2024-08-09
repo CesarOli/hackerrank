@@ -18,6 +18,7 @@ def breakingRecords(scores):
             minimo_score = score
             minimo_breaks += 1
 
+    return [maximo_breaks, minimo_breaks]
 
 if __name__ == '__main__':
 
