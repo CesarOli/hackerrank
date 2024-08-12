@@ -6,3 +6,8 @@ def reverse_array(arr):
         arr[i], arr[n - i - 1] = arr[n - i - 1], arr[i]
     
     return arr
+
+if __name__=="__main__":
+    size = int(input('Informe o tamanho do array: '))
+    arr = []
+    
