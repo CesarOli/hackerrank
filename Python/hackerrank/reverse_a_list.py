@@ -15,4 +15,5 @@ for _ in range(size):
     element = int(input('Informe o elemento {_ + 1} :' ))
     arr.append(element)
 
-    
+reversed_array = reverse_array(arr)
+print('Array reverso tem este formato: ', reversed_array)
