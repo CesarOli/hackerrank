@@ -8,6 +8,11 @@ def reverse_array(arr):
     return arr
 
 if __name__=="__main__":
-    size = int(input('Informe o tamanho do array: '))
+    size = int(input('Informe um número, este número representará o tamanho do array:'))
     arr = []
+
+for _ in range(size):
+    element = int(input('Informe o elemento {_ + 1} :' ))
+    arr.append(element)
+
     
