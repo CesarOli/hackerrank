@@ -1,3 +1,5 @@
+
+
 def get_vote_count(city_name, estimated_cost):
     
     url = f"https://jsonmock.hackerrank.com/api/food_outlets?city={city_name}&estimated_cost={estimated_cost}"
@@ -19,4 +21,10 @@ def get_vote_count(city_name, estimated_cost):
             break
     return total_votes if total_votes > 0 else -1
 
-if
+if __name__ == '__main__':
+    city_name = input('Informe o nome da cidade: ')
+    estimated_cost = int(input('Informe o custo estimado: '))
+
+    result = get_vote_count(city_name, estimated_cost)
+    print(f'Total de votos: {result}')
+
