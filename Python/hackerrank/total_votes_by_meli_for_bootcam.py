@@ -1,3 +1,4 @@
+import requests
 
 
 def get_vote_count(city_name, estimated_cost):
@@ -7,14 +8,15 @@ def get_vote_count(city_name, estimated_cost):
     page = 1 
     
     while True:
-        response = request.get(url + f'&page={page}')
+        response = requests.get(url + f'&page={page}')
         data = response.json()
 
         if not data['data']:
             break
 
         for outlet in data['data']:
-            total_votes += outlet['user_rating']['vote']
+            if 'user_rating' in outlet and 'votes' in outlet['user_rating']:
+                total_votes += outlet['user_rating']['votes']
         
         page += 1
         if page > data['total_pages']:
