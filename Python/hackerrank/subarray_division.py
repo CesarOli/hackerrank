@@ -86,8 +86,9 @@ Como o único quadrado de chocolate na barra satisfaz essa condição, imprimimo
 """)
 
 def birthday(s, d, m):
-    # Write your code here
+    for i in range(len(s) - m + 1):
 
+        return
     if __name__ == '__main__':
 
         n = int(input().strip())
