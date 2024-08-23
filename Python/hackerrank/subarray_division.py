@@ -86,20 +86,32 @@ Como o único quadrado de chocolate na barra satisfaz essa condição, imprimimo
 """)
 
 def birthday(s, d, m):
+    
+    count = 0
+
     for i in range(len(s) - m + 1):
+        bloco = s[i : i + m]
+        soma_bloco = sum(bloco)
 
-        return
-    if __name__ == '__main__':
+        if soma_bloco == d:
+            count += 1
 
-        n = int(input().strip())
+    return count
+    
+if __name__ == '__main__':
 
-        s = list(map(int, input().rstrip().split()))
+    statement()
 
-        first_multiple_input = input().rstrip().split()
+    n = int(input().strip())
 
-        d = int(first_multiple_input[0])
+    s = list(map(int, input().rstrip().split()))
 
-        m = int(first_multiple_input[1])
+    first_multiple_input = input().rstrip().split()
 
-        result = birthday(s, d, m)
+    d = int(first_multiple_input[0])
+
+    m = int(first_multiple_input[1])
+
+    result = birthday(s, d, m)
+    print(result)
         
