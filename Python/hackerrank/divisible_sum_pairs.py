@@ -50,8 +50,12 @@ Aqui estão os 5 pares válidos quando k = 3:
 
 def divisibleSumPairs(n, k, ar):
     
+    count = 0
+
+    for i in range(len(ar)):
     
-    return
+    
+            return count 
 
 if __name__ == '__main__':
 
