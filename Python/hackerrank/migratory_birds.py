@@ -76,6 +76,9 @@ Dois tipos têm uma frequência de 3, e o menor deles é o tipo 3.
 
 
 def migratoryBirds(arr):
+    
+    frequencia = {}
+    
     return 
 
 
